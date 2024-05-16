@@ -14,7 +14,9 @@ const AddUserCard = ({ addUser }) => {
   return (
     <div>
         <form onSubmit={handleOnSubmit}>
+
           <br/>
+          
             <input placeholder='Name' name='name' />
             <input placeholder='Email' name='email' />
             <input placeholder='Company' name='company' />
