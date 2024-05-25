@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AddUserCard = ({ addUser }) => {
+  const [showAdd, setShowAdd] = useState(false);
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
@@ -13,15 +14,19 @@ const AddUserCard = ({ addUser }) => {
 
   return (
     <div>
+      {showAdd ? (
         <form onSubmit={handleOnSubmit}>
-
           <br/>
-          
-            <input placeholder='Name' name='name' />
-            <input placeholder='Email' name='email' />
-            <input placeholder='Company' name='company' />
+            <input placeholder='Name' name='name' required/>
+            <input placeholder='Email' name='email' required/>
+            <input placeholder='Company' name='company' required/>
             <button onSubmit={handleOnSubmit} className='btn btn-info'>Add User</button>
         </form>
+      ) : (
+        <>
+        <button onClick={() => setShowAdd(!showAdd)} className='btn btn-info'>Create New User</button>
+        </>
+      )}
         
     </div>
   )
