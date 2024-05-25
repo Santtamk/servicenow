@@ -1,6 +1,22 @@
 the site is live on : https://usermanagement1234.netlify.app/
 
 
+Title
+User Management Dashboard
+
+Description
+This is a simple web application developed with React where users can view, add, edit, and delete user details from a mock backend API provided by JSONPlaceholder.
+
+Technologies Used
+React
+BootStrap CSS (for styling)
+Javascript
+
+Challenges and Improvements
+While working on my project, I encountered some challenges related to user edits and saving using state. 
+To enhance the user experience, I’m planning to add pagination for better navigation and provide additional options during form submission when adding new users. Let’s make it even more user-friendly! 🚀
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
